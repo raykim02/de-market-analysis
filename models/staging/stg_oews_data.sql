@@ -9,7 +9,7 @@ renamed AS (
         period,
         CAST(value AS FLOAT) AS value,
         CASE 
-            WHEN TRIM(footnote_codes) = '' THEN NULL
+            WHEN TRIM(CAST(footnote_codes AS VARCHAR)) = '' THEN NULL
             ELSE CAST(footnote_codes AS INT)
         END AS footnote_codes
     FROM source
