@@ -60,3 +60,5 @@ pip install -r requirements.txt
 ```BLS_API_KEY=your_key_here```
 
 ```ACS_API_KEY=your_key_here```
+
+```S3_BUCKET=your_bucket_name```
